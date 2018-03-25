@@ -1,12 +1,18 @@
 ﻿using System;
 
-namespace P01_GenericBox
+public class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        Box<int> intBox = new Box<int>();
+
+        Box<string> stringBox = new Box<string>();
+
+        intBox.Add(123123);
+        stringBox.Add("life in a box");
+
+
+
+        Console.WriteLine();
     }
 }

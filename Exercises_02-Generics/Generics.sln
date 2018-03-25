@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01_GenericBox", "P01_GenericBox\P01_GenericBox.csproj", "{8EF29227-2403-4D46-9A7D-D3304FD69F86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00_GenericBox", "P01_GenericBox\P00_GenericBox.csproj", "{8EF29227-2403-4D46-9A7D-D3304FD69F86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
