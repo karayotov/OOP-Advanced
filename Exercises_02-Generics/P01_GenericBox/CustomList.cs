@@ -1,7 +1,8 @@
-﻿ using System;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
-public class CustomList<T> 
+public class CustomList<T> : IEnumerable<T>
     where T : IComparable<T>
 {
     private T[] data;
@@ -143,5 +144,18 @@ public class CustomList<T>
         }
 
         return maxElement;
+    }
+
+    public IEnumerator<T> GetEnumerator()
+    {
+        for (int i = 0; i < this.Count; i++)
+        {
+            yield return this.data[i];
+        }
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return this.GetEnumerator();
     }
 }

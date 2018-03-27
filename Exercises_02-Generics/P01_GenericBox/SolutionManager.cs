@@ -5,6 +5,19 @@ using System.Text;
 
 public static class SolutionManager
 {
+    internal static void CustomListIterator()
+    {
+        List<int> list = new List<int>();
+        CustomList<int> customList = new CustomList<int>();
+
+        for (int i = 0; i < 5; i++)
+        {
+            list.Add(i);
+            customList.Add(i);
+        }
+
+        GenericCustomList();
+    }
 
     internal static void GenericCustomList()
     {
@@ -48,9 +61,13 @@ public static class SolutionManager
                     Console.WriteLine(maxElement);
                     break;
                 case "Print":
-                    for (int i = 0; i < list.Count; i++)
+                    //for (int i = 0; i < list.Count; i++)
+                    //{
+                    //    Console.WriteLine(list[i]);
+                    //}
+                    foreach (var el in list)
                     {
-                        Console.WriteLine(list[i]);
+                        Console.WriteLine(el);
                     }
                     break;
                 case "Sort":
