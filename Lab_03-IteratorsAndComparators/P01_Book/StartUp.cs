@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-public class Program
+public class StartUp
 {
     static void Main(string[] args)
     {
@@ -12,5 +12,9 @@ public class Program
         Library libraryOne = new Library();
         Library libraryTwo = new Library(bookOne, bookTwo, bookThree);
 
+        foreach (var book in libraryTwo)
+        {
+            Console.WriteLine(book);
+        }
     }
 }
