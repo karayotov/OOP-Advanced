@@ -14,6 +14,7 @@ class Run
 
         result = spy.CollectGettersAndSetters("Hacker");                      // P04
 
+
         Console.WriteLine(result);
     }
 }
