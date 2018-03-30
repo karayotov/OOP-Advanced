@@ -10,6 +10,10 @@ class Run
 
         result = spy.AnalyzeAcessModifiers("Hacker");                         // P02
 
+        result = spy.RevealPrivateMethods("Hacker");                          // P03
+
+        result = spy.CollectGettersAndSetters("Hacker");                      // P04
+
         Console.WriteLine(result);
     }
 }
