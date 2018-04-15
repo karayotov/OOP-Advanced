@@ -11,8 +11,14 @@ public class Program
         //SolutionManager.GenericSwapMethodInteger();  //P04
         //SolutionManager.GenericCountMethodStrings();  //P05
         //SolutionManager.GenericCountMethodDoubles();  //P06
-        //SolutionManager.GenericCustomList();
-        SolutionManager.CustomListIterator();
+        SolutionManager.GenericCustomList();
+
+        CustomList<string> list = new CustomList<string>();
+
+        list.Add("g");
+
+        string s = list[0];
+        //SolutionManager.CustomListIterator();
 
     }
 }

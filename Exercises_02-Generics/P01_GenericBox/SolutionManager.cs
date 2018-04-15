@@ -24,7 +24,7 @@ public static class SolutionManager
         string input;
 
         CustomList<string> list = new CustomList<string>();
-
+        
         while ((input = Console.ReadLine()) != "END")
         {
             string[] commandArgs = input.Split();
