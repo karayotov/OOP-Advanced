@@ -14,8 +14,15 @@ public class CustomList<T> : IEnumerable<T>
         this.data = new T[4];
     }
 
+    public int InnerArraySize => this.data.Length;
+
     public int Count { get; private set; }
 
+    public T this[int index]
+    {
+        get { return this.data[index]; }
+        set { this.data[index] = value; }
+    }
 
     //-------------------IEnumerable<T>----------------------------
 
