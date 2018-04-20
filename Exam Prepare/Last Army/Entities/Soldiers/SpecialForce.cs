@@ -1,25 +1,33 @@
 ﻿using System.Collections.Generic;
-using System.Text;
 
-namespace Last_Army
+public class SpecialForce : Soldier
 {
-    public class SpecialForce : Soldier
-    {
-        private const double OverallSkillMiltiplier = 3.5d;
-        private readonly List<string> weaponsAllowed = new List<string>
-        {
-            "Gun",
-            "AutomaticMachine",
-            "MachineGun",
-            "RPG",
-            "Helmet",
-            "Knife",
-            "NightVision"
-        };
+    private const int SPECIAL_FORCE_REGENERATE_INCREASE = 30;
 
-        public SpecialForce(string name, int age, double experience, double endurance)
-            : base(name, age, experience, endurance)
-        {
-        }
+    private const double OVERALL_SKILL_MULTYPLIER= 3.5d;
+
+
+    public SpecialForce(string name, int age, double experience, double endurance)
+        : base(name, age, experience, endurance)
+    {
     }
+
+    private readonly List<string> weaponsAllowed = new List<string>
+    {
+        "Gun",
+        "AutomaticMachine",
+        "Helmet",
+        "Knife",
+        "MachineGun",
+        "NightVision",
+        "RPG",
+    };
+
+    protected override int RegenerateIncrease => SPECIAL_FORCE_REGENERATE_INCREASE;
+
+    protected override List<string> WeaponsAllowed => weaponsAllowed;
+
+    protected override double OverallSkillMultiplier => OVERALL_SKILL_MULTYPLIER;
+
+
 }

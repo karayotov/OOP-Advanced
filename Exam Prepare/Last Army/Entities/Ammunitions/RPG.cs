@@ -1,12 +1,7 @@
-﻿using Last_Army.Entities.Ammunitions;
-
-namespace Last_Army
+﻿public class RPG : Ammunition
 {
-    public class RPG : Ammunition
-    {
-        public const double WEIGHT = 17.1d;
+    private const double WEIGHT = 17.1d;
 
-        public override double Weight => WEIGHT;
+    public override double Weight => WEIGHT;
 
-    }
 }
